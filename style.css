@@ -1,0 +1,197 @@
+/* Tags */
+
+body {
+  background-color: black;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+  font-family: "Arial Black";
+  font-size: 50px;
+  margin-bottom: 1%;
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-family: "Verdana";
+}
+
+div img {
+  max-width: 100%;
+}
+
+h2 {
+  color: white;
+  font-size: 20px;
+  font-family: "Arial Black";
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-family: "Arial Black";
+  text-decoration: underline;
+}
+
+ol {
+  max-width: 82%;
+  margin: auto;
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  width: 100%;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 2.9vw;
+  font-family: "Verdana";
+  color: white;
+}
+
+label {
+  color: white;
+  display: inline-block;
+  font-size: 3.5vw;
+  font-family: "Arial";
+}
+
+form {
+  width: 70%;
+  margin: auto;
+  background-color: #999999;
+}
+
+input[type=number] {
+  width: 43px;
+  height: 43px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: calc(20% - 30px);
+  font-size: 20px;
+}
+
+input[type=text] {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 90%;
+  height: 25px;
+  font-size: 20px;
+}
+
+input[type=submit] {
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+input[type=reset] {
+  font-size: 25px;
+}
+
+/* Classes */
+
+.icon {
+  max-width: 15%;
+  display: inline-block;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.tab {
+  background-color: #f1f1f1;;
+  width: 82%;
+  margin: auto;
+  text-align: center;
+}
+
+.tab a {
+  text-decoration: none;
+  color: black;
+  padding-left: 4.5%;
+  padding-right: 4.5%;
+  font-size: 2.5vw;
+  font-family: "Arial Black";
+}
+
+.tab a:focus, .active {
+  background-color: #999999;
+}
+
+.tab a:hover {
+  background-color: #999999;
+}
+
+.hof {
+  max-width: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: inline-block;
+}
+
+/* IDs */
+
+#icon_container {
+  width: 100%;
+  text-align: center;
+}
+
+#content {
+  max-width: 70%;
+  margin: auto;
+}
+
+#skelly {
+  width: 45%;
+  display: block;
+  margin: auto;
+}
+
+#ranks16 li{
+  background-color: #ff9900;
+}
+
+#ranks17 li {
+  background-color: green;
+}
+
+#ranks18 li {
+  background-color: blue;
+}
+
+#ranksoverall li {
+  background-color: purple;
+}
+
+#hof_container {
+  text-align: center;
+  width: 100%;
+}
+
+#hof_container p {
+  font-size: 2.1vw;
+}
+
+#moviename {
+  text-align: center;
+  margin-bottom: 15px;
+  padding-top: 10px;
+}
+
+#numbers {
+  width: 80%;
+  margin: auto;
+}
+
+#submitreset {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
