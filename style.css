@@ -1,201 +1,143 @@
-/* Tags */
-
 body {
   background-color: black;
+  margin: 0;
+  line-height: 1.5;
 }
 
-h1 {
-  color: red;
-  text-align: center;
-  font-family: "Arial Black";
-  font-size: 50px;
-  margin-bottom: 1%;
-}
+body,h1,h2,h3,h4,h5,h6,p,a {font-family: "Montserrat", sans-serif;}
 
-p {
+h1, #discord, i {
   color: white;
   text-align: center;
-  font-family: "Verdana";
 }
 
-div img {
-  max-width: 100%;
+h2,h3,p {color: #757575;}
+
+h1 {
+  font-size: 64px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h2 {
-  color: white;
-  font-size: 20px;
-  font-family: "Arial Black";
-}
-
-a {
-  text-decoration: none;
-}
-
-h3 {
-  color: white;
   text-align: center;
-  font-family: "Arial Black";
-  text-decoration: underline;
+  font-size: 30px;
 }
 
-ol {
-  max-width: 82%;
-  margin: auto;
-  list-style-type: none;
-  padding: 0;
+h3 {font-size: 24px;}
+
+p {font-size: 18px;}
+
+a {text-decoration: none;}
+
+.sidebar {
+  width: 120px;
+  height: 100%;
+  background-color: #222;
+  text-align: center;
+  position: fixed;
+  overflow: auto;
+  top: 0;
 }
 
-li {
+.sidebarLabel {
+  color: white;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar a {
+  color: white;
+  padding: 6px 12px;
+  font-size: 24px;
+  display: none;
+}
+
+.mobileIcon {
+  display: none;
+}
+
+.sidebar i {
+  padding: 10px 12px;
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.sidebar a {
+  display: block;
   width: 100%;
-  text-align: center;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  font-size: 2.9vw;
-  font-family: "Verdana";
-  color: white;
 }
 
-label {
-  color: white;
-  display: inline-block;
-  font-size: 3.5vw;
-  font-family: "Arial";
-}
-
-form {
-  width: 70%;
-  margin: auto;
-  background-color: #999999;
-}
-
-input[type=number] {
-  width: 43px;
-  height: 43px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-right: calc(20% - 30px);
-  font-size: 20px;
-}
-
-input[type=text] {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 90%;
-  height: 25px;
-  font-size: 20px;
-}
-
-input[type=submit] {
-  margin-right: 10px;
-  font-size: 25px;
-}
-
-input[type=reset] {
-  font-size: 25px;
-}
-
-/* Classes */
-
-.icon {
-  max-width: 15%;
-  display: inline-block;
-  margin-bottom: 3%;
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-.tab {
-  background-color: #f1f1f1;;
-  width: 82%;
-  margin: auto;
-  text-align: center;
-}
-
-.tab a {
-  text-decoration: none;
-  color: black;
-  padding-left: 4.5%;
-  padding-right: 4.5%;
-  font-size: 2.5vw;
-  font-family: "Arial Black";
-}
-
-.tab a:focus, .active {
-  background-color: #999999;
-}
-
-.tab a:hover {
-  background-color: #999999;
-}
-
-.hof {
-  max-width: 20%;
-  margin-left: 5%;
-  margin-right: 5%;
-  display: inline-block;
-}
-
-/* IDs */
-
-#icon_container {
-  width: 100%;
-  text-align: center;
-}
+.sidebar a:hover {background-color: black;}
 
 #content {
-  max-width: 70%;
-  margin: auto;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
-#skelly {
-  width: 45%;
-  display: block;
-  margin: auto;
+#main {
+  margin-left: 120px;
+  padding:12px 24px!important
 }
 
-#ranks16 li{
-  background-color: #ff9900;
-}
-
-#ranks17 li {
-  background-color: green;
-}
-
-#ranks18 li {
-  background-color: blue;
-}
-
-#ranks21 li {
-  background-color: red;
-}
-
-#ranksoverall li {
-  background-color: purple;
-}
-
-#hof_container {
-  text-align: center;
+#mobileSidebar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
   width: 100%;
+  z-index: 1;
 }
 
-#hof_container p {
-  font-size: 2.1vw;
+#paypal {margin-top: 10px;}
+
+#mobilePaypal {display: none;}
+
+#active {background-color: black;}
+
+#active:hover {background-color: #cccccc;}
+
+#active:hover p {color: black;}
+
+#active:hover i {color: black;}
+
+i {font-size: 36px;}
+
+header {padding: 32px 16px 32px 16px;}
+
+footer {margin-top: 50px;}
+
+footer p {font-size: 15px;}
+
+@media only screen and (max-width: 980px) {
+
+  .sidebar {display: none;}
+
+  .navbar a.mobileIcon {display: block;}
+
+  footer p {font-size: 8px;}
+
+  .paypal {display: none;}
+
+  #main {margin-left: 0;}
+
+  .navbar.responsive a.mobileButton {display: block;}
+
+  .navbar.responsive {background-color: #222; height: 100%; opacity: 0.9;}
+
+  .mobileButton {text-align: center;}
+
+  a.mobileButton {font-size: 40px; font-family: "Montserrat", sans-serif;}
+
+  a.mobileIcon {font-size: 50px;}
+
+  #mobilePaypal.responsive {display: block; text-align: center; padding-top: 20px;}
 }
 
-#moviename {
-  text-align: center;
-  margin-bottom: 15px;
-  padding-top: 10px;
-}
+@media only screen and (max-height: 780px) {
 
-#numbers {
-  width: 80%;
-  margin: auto;
-}
-
-#submitreset {
-  text-align: center;
-  margin-top: 20px;
-  padding-bottom: 20px;
+  .sidebar i {
+    padding: 4px 8px;
+    font-size: 24px;
+  }
 }
