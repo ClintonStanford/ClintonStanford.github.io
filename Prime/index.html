@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Soundboard</title>
+        
+        <style>body {
+    font-family: Arial, sans-serif;
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.button:active {
+    transform: scale(0.95);
+}
+</style>
+</head>
+
+<body>
+    <h1>Liberty Prime</h1>
+
+    <div class="container">
+        <button class="button" onclick="playSound('Sounds/non-negotiable.mp3')">Nonnegotiable</button>
+        <button class="button" onclick="playSound('Sounds/better-dead.mp3')">Better Dead</button>
+        <button class="button" onclick="playSound('Sounds/lie.mp3')">Communism is a Lie!</button>
+        <button class="button" onclick="playSound('Sounds/online.mp3')">Online</button>
+        <button class="button" onclick="playSound('Sounds/never-fall.mp3')">Never Fall</button>
+        <button class="button" onclick="playSound('Sounds/alternative.mp3')">Alternative</button>
+        <button class="button" onclick="playSound('Sounds/i-die.mp3')">I Die</button>
+        <button class="button" onclick="playSound('Sounds/detected.mp3')">Detected</button>
+        <button class="button" onclick="playSound('Sounds/engaged.mp3')">Engaged</button>
+    </div>
+    
+    <script>
+    
+    function playSound(soundFile) {
+    const audio = new Audio(soundFile);
+    audio.play();
+    }
+
+</script>
+
+</body>
+</html>
